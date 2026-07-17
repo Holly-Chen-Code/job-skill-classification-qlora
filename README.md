@@ -1,10 +1,45 @@
 # QLoRA Fine-Tuning for Functional Job Skill Classification
 
-## Project Overview
+### Define Objectives
 
-This project fine-tunes a large language model using QLoRA to identify the functional skill category of a job posting.
+The objective of this project is to investigate whether a small language model can accurately classify the functional skill category of a job posting.
 
-The model takes a job title and job description as input and predicts the corresponding functional skill category.
+Given a job title and job description, the model is trained to predict the corresponding `skill_name`. This task is formulated as supervised instruction fine-tuning for text classification using a causal language model.
+
+---
+### Literature Review
+
+Recent studies have shown that parameter-efficient fine-tuning methods such as LoRA and QLoRA can significantly reduce GPU memory requirements while maintaining competitive performance.
+
+The Phi-3 Mini model was selected because it provides strong language understanding capabilities with a relatively small number of parameters, making it suitable for educational projects and limited GPU resources.
+
+The project is implemented using Hugging Face Transformers and PEFT, following current best practices for efficient instruction fine-tuning.
+
+---
+### Benchmarking
+
+Several approaches were considered during the project design.
+
+Traditional machine learning methods such as TF-IDF with Logistic Regression are computationally efficient but have limited contextual understanding.
+
+Large language models provide stronger semantic reasoning but often require substantial computational resources.
+
+Phi-3 Mini combined with QLoRA offers a practical balance between model performance, memory efficiency, and training cost, making it suitable for this project.
+
+---
+### Preliminary Experiments
+
+Before training on the complete dataset, a development subset was used to validate the entire pipeline.
+
+The preliminary experiment confirmed that:
+
+- Data preprocessing was successful.
+- Instruction-response formatting worked correctly.
+- The QLoRA fine-tuning pipeline completed without errors.
+- Training loss decreased over one epoch.
+- A sample inference correctly predicted the expected skill category.
+
+These experiments verified the feasibility of the proposed approach before larger-scale training.
 
 ---
 
