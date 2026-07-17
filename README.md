@@ -1,7 +1,16 @@
 # QLoRA Fine-Tuning for Functional Job Skill Classification
 
 ---
-## 1.Research and Selection of Methods
+## 1.Project overview
+This project fine-tunes Microsoft's Phi-3 Mini model using QLoRA to classify the functional skill category of a job posting.
+
+After exploring the LinkedIn Job Postings dataset, we refined the scope of our original project proposal to better align with the available data. Instead of generating job descriptions, our project focuses on supervised instruction fine-tuning for text classification. The model learns to predict the correct `skill_name` using the job title and job description.
+
+The project demonstrates how a small language model can perform structured skill classification using real-world LinkedIn job postings.
+
+---
+
+## 2.Research and Selection of Methods
 
 ### Define Objectives
 
