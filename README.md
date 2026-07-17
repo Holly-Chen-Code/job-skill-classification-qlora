@@ -1,7 +1,7 @@
 # QLoRA Fine-Tuning for Functional Job Skill Classification
 
 ---
-## Research and Selection of Methods
+## 1.Research and Selection of Methods
 
 ### Define Objectives
 
