@@ -43,7 +43,6 @@ The preliminary experiment confirmed that:
 - The QLoRA fine-tuning pipeline completed successfully.
 - Training loss decreased over one epoch while validation loss remained stable.
 - A sample inference correctly predicted the expected `skill_name`.
-
 These experiments verified the feasibility of the proposed approach before larger-scale experiments.
 ---
 
