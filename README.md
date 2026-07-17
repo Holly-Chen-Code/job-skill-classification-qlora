@@ -26,7 +26,7 @@ https://www.kaggle.com/datasets/arshkon/linkedin-job-postings
 |-----------|-------------|
 | [01_data_preprocessing.ipynb](notebooks/01_data_preprocessing.ipynb) | Data cleaning and preprocessing |
 | [02_build_training_dataset.ipynb](notebooks/02_build_training_dataset.ipynb) | Build instruction-response training dataset |
-| [03_qlora_fine_tuning.ipynb](notebooks/03_qlora_fine_tuning.ipynb) |
+| [03_qlora_fine_tuning.ipynb](notebooks/03_qlora_fine_tuning.ipynb) | Fine-tune the model using QLoRA |
 | [04_model_evaluation.ipynb](notebooks/04_model_evaluation.ipynb) | Evaluate the fine-tuned model |
 
 ### Other Directories
