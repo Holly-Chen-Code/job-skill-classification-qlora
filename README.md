@@ -1,5 +1,8 @@
 # QLoRA Fine-Tuning for Functional Job Skill Classification
 
+---
+## Research and Selection of Methods
+
 ### Define Objectives
 
 The objective of this project is to investigate whether a small language model can accurately classify the functional skill category of a job posting.
