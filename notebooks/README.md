@@ -6,5 +6,5 @@ This directory contains the project notebooks.
 
 - 📄 [01_data_preprocessing.ipynb](01_data_preprocessing.ipynb)
 - 📄 [02_build_training_dataset.ipynb](02_build_training_dataset.ipynb)
-- 📄 [03-phi3-qlora-training.ipynb](03-phi3-qlora-training.ipynb)
+- 📄 [03_qlora_fine_tuning.ipynb](03_qlora_fine_tuning.ipynb)
 - 📄 [04_model_evaluation.ipynb](04_model_evaluation.ipynb)
