@@ -189,69 +189,6 @@ The following figures illustrate the current implementation results.
 1. Abdin, M., et al. (2024). *Phi-3 Technical Report*. Microsoft.
 2. Dettmers, T., et al. (2023). *QLoRA: Efficient Finetuning of Quantized LLMs*.
 3. Hu, E., et al. (2022). *LoRA: Low-Rank Adaptation of Large Language Models*.
-4. ## Repository Structure
-<img width="600" height="358" alt="image" src="https://github.com/user-attachments/assets/be7e84ae-c4af-45e5-9a89-7181e2f43c15" />
-
-The repository is organized into three Jupyter notebooks that cover the complete workflow, from data preprocessing to model fine-tuning.
-
----
-
-## Usage
-
-Run the notebooks in the following order:
-
-1. `01_data_preprocessing.ipynb`
-   - Explore and clean the LinkedIn Job Postings dataset.
-   - Merge the three tables.
-
-2. `02_build_training_dataset.ipynb`
-   - Convert the merged dataset into instruction-response pairs.
-   - Split the dataset into training, validation, and test sets.
-
-3. `03_phi3_qlora_training.ipynb`
-   - Fine-tune Microsoft's Phi-3 Mini using QLoRA.
-
-4. `04_model_evaluation.ipynb`
-   - Evaluate the fine-tuned model and calculate performance metrics.
-
----
-
-## Results
-
-The preliminary implementation successfully completed the end-to-end training pipeline.
-
-Current progress includes:
-
-- Successfully merged and cleaned the LinkedIn Job Postings dataset.
-- Constructed instruction-response training examples.
-- Fine-tuned Phi-3 Mini using QLoRA.
-- Verified that the model can generate the expected `skill_name` for sample job postings.
-
-The following figures illustrate the current implementation results.
-
-- Training Loss
-<img width="928" height="377" alt="image" src="https://github.com/user-attachments/assets/a5ad561e-3433-4602-a88f-2520829a9ad4" />
-- Validation Loss
-<img width="699" height="455" alt="image" src="https://github.com/user-attachments/assets/719eae6e-123e-469a-9da3-1785528aa6b0" />
-- Sample Prediction
-<img width="970" height="269" alt="image" src="https://github.com/user-attachments/assets/c5376e9d-3464-4830-b44d-8c28717c4985" />
-
----
-
-## Contributors
-
-| Team Member | Contribution |
-|-------------|--------------|
-| Haolin Chen | Data preprocessing, dataset construction, QLoRA fine-tuning, documentation |
-| Michael Dong | Model evaluation, performance metrics, visualization |
-
----
-
-## References
- 
-1. Abdin, M., et al. (2024). *Phi-3 Technical Report*. Microsoft.
-2. Dettmers, T., et al. (2023). *QLoRA: Efficient Finetuning of Quantized LLMs*.
-3. Hu, E., et al. (2022). *LoRA: Low-Rank Adaptation of Large Language Models*.
 4. Gunasekar, S., et al. (2023). Textbooks Are All You Need. arXiv. 
 5. [Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers)
 6. [LinkedIn Job Postings Dataset (Kaggle)](...)
