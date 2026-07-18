@@ -166,8 +166,10 @@ The following figures illustrate the current implementation results.
 
 - Training Loss
 <img width="928" height="377" alt="image" src="https://github.com/user-attachments/assets/a5ad561e-3433-4602-a88f-2520829a9ad4" />
+
 - Validation Loss
 <img width="699" height="455" alt="image" src="https://github.com/user-attachments/assets/719eae6e-123e-469a-9da3-1785528aa6b0" />
+
 - Sample Prediction
 <img width="970" height="269" alt="image" src="https://github.com/user-attachments/assets/c5376e9d-3464-4830-b44d-8c28717c4985" />
 
@@ -187,6 +189,7 @@ The following figures illustrate the current implementation results.
 1. Abdin, M., et al. (2024). *Phi-3 Technical Report*. Microsoft.
 2. Dettmers, T., et al. (2023). *QLoRA: Efficient Finetuning of Quantized LLMs*.
 3. Hu, E., et al. (2022). *LoRA: Low-Rank Adaptation of Large Language Models*.
+
 4.[Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers)
 5.[LinkedIn Job Postings Dataset (Kaggle)](...)
 
