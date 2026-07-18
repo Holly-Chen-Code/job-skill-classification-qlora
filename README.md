@@ -95,16 +95,8 @@ The project fine-tunes Microsoft's Phi-3 Mini, a lightweight decoder-only transf
 Instead of updating all model parameters, the project adopts QLoRA, which injects Low-Rank Adaptation (LoRA) layers into the pretrained model. This significantly reduces the number of trainable parameters while maintaining competitive performance.
 
 The model receives the job title and job description as input and generates the corresponding `skill_name` as the output.
+<img width="216" height="364" alt="image" src="https://github.com/user-attachments/assets/833465c1-71ac-445f-9ab0-85aaad070e94" />
 
-Job Title
-        +
-Job Description
-        │
-        ▼
- Phi-3 Mini
-        │
-        ▼
- skill_name
 
  ---
 ### Training & Fine-tuning
@@ -132,16 +124,11 @@ Training was performed on a Kaggle GPU environment. The LoRA adapters were saved
 
 ---
 ## Repository Structure
-job-skill-classification-qlora/
-│
-├── notebooks/
-│   ├── | [01_data_preprocessing.ipynb](notebooks/01_data_preprocessing.ipynb) | Data cleaning and preprocessing |
-│   ├── | [02_build_training_dataset.ipynb](notebooks/02_build_training_dataset.ipynb) | Build instruction-response training dataset |
-│   └── | [03_qlora_fine_tuning.ipynb](notebooks/03_qlora_fine_tuning.ipynb) | Fine-tune the model using QLoRA |
-│   └── | [04_model_evaluation.ipynb](notebooks/04_model_evaluation.ipynb) | Evaluate the fine-tuned model |
-│
-├── README.md
-└── requirements.txt
+<img width="600" height="358" alt="image" src="https://github.com/user-attachments/assets/be7e84ae-c4af-45e5-9a89-7181e2f43c15" />
+[01_data_preprocessing.ipynb](notebooks/01_data_preprocessing.ipynb) | Data cleaning and preprocessing |
+[02_build_training_dataset.ipynb](notebooks/02_build_training_dataset.ipynb) | Build instruction-response training dataset |
+[03_qlora_fine_tuning.ipynb](notebooks/03_qlora_fine_tuning.ipynb) | Fine-tune the model using QLoRA |
+[04_model_evaluation.ipynb](notebooks/04_model_evaluation.ipynb) | Evaluate the fine-tuned model |
 The repository is organized into three Jupyter notebooks that cover the complete workflow, from data preprocessing to model fine-tuning.
 
 ```
