@@ -73,26 +73,7 @@ The Hugging Face ecosystem was selected because it provides seamless support for
 
 ---
 ### Dataset Preparation
-postings.csv
-     │
-     ▼
-Data Exploration and Cleaning
-     │
-     ├──────────── job_skills.csv
-     │                    │
-     └──────────── skills.csv
-                          │
-                          ▼
-                Merge Three Tables
-                          │
-                          ▼
-                Final Merged Dataset
-                          │
-                          ▼
-              Instruction Formatting
-                          │
-                          ▼
-             Train / Validation / Test
+<img width="510" height="746" alt="image" src="https://github.com/user-attachments/assets/fd8f908d-1a2e-4552-94f1-f6b01b8d42f9" />
              
 The project uses the LinkedIn Job Postings dataset obtained from Kaggle. Three related tables were used:
 
