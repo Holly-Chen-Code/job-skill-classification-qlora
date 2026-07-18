@@ -126,6 +126,7 @@ Training was performed on a Kaggle GPU environment. The LoRA adapters were saved
 ---
 ## Repository Structure
 <img width="600" height="358" alt="image" src="https://github.com/user-attachments/assets/be7e84ae-c4af-45e5-9a89-7181e2f43c15" />
+
 The repository is organized into three Jupyter notebooks that cover the complete workflow, from data preprocessing to model fine-tuning.
 
 ```
