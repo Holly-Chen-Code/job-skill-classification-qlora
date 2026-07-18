@@ -69,7 +69,7 @@ The project was implemented using the following frameworks and libraries:
 | pandas | Data preprocessing and dataset manipulation |
 | scikit-learn | Train/validation/test splitting and evaluation utilities |
 
-The Hugging Face ecosystem was selected because it provides seamless support for pretrained language models and integrates well with PEFT for parameter-efficient fine-tuning. PyTorch offers flexibility during model training, while bitsandbytes enables efficient 4-bit quantization, making it possible to fine-tune Phi-3 Mini on a Kaggle GPU.
+The implementation framework was selected based on compatibility, computational efficiency, and ease of development. PyTorch was chosen as the core deep learning framework due to its flexibility and widespread adoption in NLP research. Hugging Face Transformers provides native support for Microsoft's Phi-3 Mini model and simplifies tokenizer, model loading, and training workflows. PEFT was adopted to implement LoRA adapters, enabling parameter-efficient fine-tuning by updating only a small subset of model parameters. The bitsandbytes library supports 4-bit quantization required by QLoRA, substantially reducing GPU memory consumption and allowing training on Kaggle's free GPU resources. Pandas was used for data preprocessing and manipulation, while scikit-learn was used for dataset splitting and future evaluation metrics.
 
 ---
 ### Dataset Preparation
