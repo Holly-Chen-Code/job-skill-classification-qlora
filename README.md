@@ -130,6 +130,7 @@ Training was performed on a Kaggle GPU environment. The LoRA adapters were saved
 The repository is organized into three Jupyter notebooks that cover the complete workflow, from data preprocessing to model fine-tuning.
 
 ```
+
 ## Usage
 
 Run the notebooks in the following order:
@@ -149,6 +150,7 @@ Run the notebooks in the following order:
    - Evaluate the fine-tuned model and calculate performance metrics.
 
 ---
+
 ## Results
 
 The preliminary implementation successfully completed the end-to-end training pipeline.
