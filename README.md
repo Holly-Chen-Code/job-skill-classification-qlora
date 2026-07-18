@@ -116,6 +116,7 @@ The major training configurations are summarized below.
 | Scheduler | Cosine |
 
 Training was performed on a Kaggle GPU environment. The LoRA adapters were saved after training for inference and evaluation.
+<img width="1152" height="494" alt="image" src="https://github.com/user-attachments/assets/36525085-cf52-43e4-b880-4e85500e9b89" />
 <img width="735" height="455" alt="image" src="https://github.com/user-attachments/assets/cb5bc1b3-7ab5-4f44-b4fc-cb357f1f435d" />
 
 ---
