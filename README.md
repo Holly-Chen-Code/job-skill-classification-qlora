@@ -126,10 +126,6 @@ Training was performed on a Kaggle GPU environment. The LoRA adapters were saved
 ---
 ## Repository Structure
 <img width="600" height="358" alt="image" src="https://github.com/user-attachments/assets/be7e84ae-c4af-45e5-9a89-7181e2f43c15" />
-[01_data_preprocessing.ipynb](notebooks/01_data_preprocessing.ipynb) | Data cleaning and preprocessing |
-[02_build_training_dataset.ipynb](notebooks/02_build_training_dataset.ipynb) | Build instruction-response training dataset |
-[03_qlora_fine_tuning.ipynb](notebooks/03_qlora_fine_tuning.ipynb) | Fine-tune the model using QLoRA |
-[04_model_evaluation.ipynb](notebooks/04_model_evaluation.ipynb) | Evaluate the fine-tuned model |
 The repository is organized into three Jupyter notebooks that cover the complete workflow, from data preprocessing to model fine-tuning.
 
 ```
