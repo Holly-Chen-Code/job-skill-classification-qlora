@@ -129,7 +129,7 @@ Training was performed on a Kaggle GPU environment. The LoRA adapters were saved
 
 The repository is organized into three Jupyter notebooks that cover the complete workflow, from data preprocessing to model fine-tuning.
 
-```
+---
 
 ## Usage
 
