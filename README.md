@@ -170,6 +170,7 @@ The following figures illustrate the current implementation results.
 <img width="970" height="269" alt="image" src="https://github.com/user-attachments/assets/c5376e9d-3464-4830-b44d-8c28717c4985" />
 
 ---
+
 ## Contributors
 
 | Team Member | Contribution |
@@ -178,6 +179,7 @@ The following figures illustrate the current implementation results.
 | Michael Dong | Model evaluation, performance metrics, visualization |
 
 ---
+
 ## References
 
 1. Abdin, M., et al. (2024). *Phi-3 Technical Report*. Microsoft.
