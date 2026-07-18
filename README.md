@@ -124,14 +124,14 @@ Training was performed on a Kaggle GPU environment. The LoRA adapters were saved
 
 
 ---
-## Repository Structure
+## 4. Repository Structure
 <img width="600" height="358" alt="image" src="https://github.com/user-attachments/assets/be7e84ae-c4af-45e5-9a89-7181e2f43c15" />
 
 The repository is organized into three Jupyter notebooks that cover the complete workflow, from data preprocessing to model fine-tuning.
 
 ---
 
-## Usage
+## 5. Usage
 
 Run the notebooks in the following order:
 
@@ -151,7 +151,7 @@ Run the notebooks in the following order:
 
 ---
 
-## Results
+## 6. Results
 
 The preliminary implementation successfully completed the end-to-end training pipeline.
 
@@ -175,7 +175,7 @@ The following figures illustrate the current implementation results.
 
 ---
 
-## Contributors
+## 7. Contributors
 
 | Team Member | Contribution |
 |-------------|--------------|
@@ -184,7 +184,7 @@ The following figures illustrate the current implementation results.
 
 ---
 
-## References
+## 8. References
 
 1. Abdin, M., et al. (2024). *Phi-3 Technical Report*. Microsoft.
 2. Dettmers, T., et al. (2023). *QLoRA: Efficient Finetuning of Quantized LLMs*.
