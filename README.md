@@ -194,7 +194,7 @@ The following figures illustrate the current implementation results.
 
 The repository is organized into three Jupyter notebooks that cover the complete workflow, from data preprocessing to model fine-tuning.
 
-```
+---
 
 ## Usage
 
