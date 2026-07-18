@@ -71,6 +71,7 @@ The project was implemented using the following frameworks and libraries:
 
 The Hugging Face ecosystem was selected because it provides seamless support for pretrained language models and integrates well with PEFT for parameter-efficient fine-tuning. PyTorch offers flexibility during model training, while bitsandbytes enables efficient 4-bit quantization, making it possible to fine-tune Phi-3 Mini on a Kaggle GPU.
 
+---
 ### Dataset Preparation
 postings.csv
      │
