@@ -193,3 +193,31 @@ The following figures illustrate the current implementation results.
 5. [Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers)
 6. [LinkedIn Job Postings Dataset (Kaggle)](...)
 
+## 9. Setup Instructions
+
+To configure the Kaggle environment for this project:
+
+1. Go to [kaggle.com/notebooks](https://www.kaggle.com/notebooks) and log in with your Kaggle account
+2. Open or create a notebook, then navigate to **Session Options** in the right sidebar
+3. Under **Accelerator**, select **GPU T4 x2**
+4. Toggle the **Internet** option to **ON** — this is required to download Phi-3 Mini from Hugging Face
+5. Under the **Input** section, attach the following:
+   - The **Phi-3** base model from Microsoft (searchable under the Models tab)
+   - Your **test dataset** (uploaded as a Kaggle dataset)
+   - The **LoRA adapter** outputs from the previous training step (uploaded as a Kaggle dataset)
+
+> **Note:** GPU quota resets weekly. To check your remaining hours and reset date, hover over the quota indicator in the notebook sidebar or visit `kaggle.com/account/GPU`.
+
+Since our model is built on Microsoft Phi-3 Mini, the university-sponsored Open OnDemand (OOD) environment does not support integration with external pretrained models, requiring us to identify alternative compute solutions.
+
+We opted for **Kaggle Notebook GPU** integration, available to registered and verified Kaggle users. While the free tier is generous — approximately **30 GPU hours per week** — we encountered several practical limitations during development:
+
+- Remote model execution is inconsistent and prone to unexpected session termination
+- Long-running cells (e.g., perplexity computation over 10,000+ samples) frequently time out before completion
+- When a crash occurs, training must be restarted from the last saved checkpoint, adding significant overhead
+
+Over the past week, our model crashed multiple times, requiring repeated restarts and checkpoint recovery. To mitigate this, we recommend:
+
+1. Saving model checkpoints frequently during training
+2. Running evaluation on sampled subsets rather than the full test set where possible
+3. Monitoring remaining GPU quota at `kaggle.com/account/GPU` to avoid mid-run terminations
