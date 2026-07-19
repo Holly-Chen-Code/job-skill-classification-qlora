@@ -1,4 +1,5 @@
 # QLoRA Fine-Tuning for Functional Job Skill Classification
+Group 20: Michael Dong, Haolin Chen
 
 ---
 ## 1.Project overview
