@@ -1,4 +1,5 @@
 # QLoRA Fine-Tuning for Functional Job Skill Classification
+Group 20: Michael Dong, Haolin Chen
 
 ---
 ## 1.Project overview
@@ -102,12 +103,13 @@ The model receives the job title and job description as input and generates the 
 ### Training & Fine-tuning
 
 The model was fine-tuned using QLoRA with the Hugging Face Trainer API.
+Training was performed on a Kaggle GPU environment. The LoRA adapters were saved after training for inference and evaluation.
 
 The major training configurations are summarized below.
 
 | Parameter | Value |
 |-----------|------:|
-| Epochs | 1 |
+| Epochs | 2 |
 | Learning Rate | 2e-4 |
 | Batch Size | 1 |
 | Gradient Accumulation | 8 |
@@ -115,9 +117,26 @@ The major training configurations are summarized below.
 | Precision | FP16 |
 | Scheduler | Cosine |
 
-Training was performed on a Kaggle GPU environment. The LoRA adapters were saved after training for inference and evaluation.
-<img width="1152" height="494" alt="image" src="https://github.com/user-attachments/assets/36525085-cf52-43e4-b880-4e85500e9b89" />
-<img width="735" height="455" alt="image" src="https://github.com/user-attachments/assets/cb5bc1b3-7ab5-4f44-b4fc-cb357f1f435d" />
+This notebook implemented QLoRA fine-tuning for Microsoft's Phi-3 Mini model on the job skill classification dataset.
+
+The training pipeline included:
+
+- Dataset loading and preprocessing
+- Instruction formatting with the Phi-3 chat template
+- QLoRA configuration using PEFT
+- Model fine-tuning
+- Validation on the held-out validation set
+- LoRA adapter export
+
+After two training epochs, the model converged successfully.
+
+Final validation results:
+
+- Training Loss: **0.270**
+- Validation Loss: **0.414**
+<img width="934" height="906" alt="image" src="https://github.com/user-attachments/assets/d6ae53d6-bb83-4000-8d49-10a8531937d5" />
+The trained adapter is saved and will be evaluated against the baseline model in Notebook 4.
+
 
 ---
 ### Evaluation
