@@ -107,7 +107,7 @@ The major training configurations are summarized below.
 
 | Parameter | Value |
 |-----------|------:|
-| Epochs | 1 |
+| Epochs | 2 |
 | Learning Rate | 2e-4 |
 | Batch Size | 1 |
 | Gradient Accumulation | 8 |
