@@ -140,6 +140,16 @@ The trained adapter is saved and will be evaluated against the baseline model in
 
 ---
 ### Evaluation
+We evaluated the fine-tuned Phi-3 Mini model by comparing it with the original baseline model using Accuracy, Precision, Recall, F1 score, a confusion matrix, and qualitative prediction examples.
+The results show that QLoRA fine-tuning significantly improved the model's task-specific classification capability. While the baseline model failed to predict the predefined skill categories, the fine-tuned model correctly identified several categories and achieved higher evaluation metrics.
+Although the model still occasionally generated verbose outputs and struggled with some minority classes, the evaluation demonstrates that parameter-efficient fine-tuning successfully adapted Phi-3 Mini to the job skill classification task.
+
+<img width="1090" height="720" alt="image" src="https://github.com/user-attachments/assets/03ee47f1-2e24-4055-979a-273e7dbde25d" />
+Performance Comparison: The fine-tuned model consistently outperformed the baseline across all evaluation metrics, demonstrating the effectiveness of QLoRA fine-tuning.
+
+<img width="1158" height="1059" alt="image" src="https://github.com/user-attachments/assets/4530431f-0a46-484f-8e51-d9de08fd9556" />
+The confusion matrix shows that the model correctly classified several skill categories after fine-tuning, while some minority classes remain challenging.
+
 
 
 ---
