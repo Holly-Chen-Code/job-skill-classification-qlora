@@ -73,7 +73,20 @@ The project was implemented using the following frameworks and libraries:
 The implementation framework was selected based on compatibility, computational efficiency, and ease of development. PyTorch was chosen as the core deep learning framework due to its flexibility and widespread adoption in NLP research. Hugging Face Transformers provides native support for Microsoft's Phi-3 Mini model and simplifies tokenizer, model loading, and training workflows. PEFT was adopted to implement LoRA adapters, enabling parameter-efficient fine-tuning by updating only a small subset of model parameters. The bitsandbytes library supports 4-bit quantization required by QLoRA, substantially reducing GPU memory consumption and allowing training on Kaggle's free GPU resources. Pandas was used for data preprocessing and manipulation, while scikit-learn was used for dataset splitting and future evaluation metrics.
 
 ---
-### Dataset Preparation
+
+### Model Development
+
+The project fine-tunes Microsoft's Phi-3 Mini, a lightweight decoder-only transformer designed for instruction-following tasks.
+
+Instead of updating all model parameters, the project adopts QLoRA, which injects Low-Rank Adaptation (LoRA) layers into the pretrained model. This significantly reduces the number of trainable parameters while maintaining competitive performance.
+
+The model receives the job title and job description as input and generates the corresponding `skill_name` as the output.
+<img width="216" height="364" alt="image" src="https://github.com/user-attachments/assets/833465c1-71ac-445f-9ab0-85aaad070e94" />
+
+---
+
+
+### Dataset Preparation (Notebook 1 & 2)
 <img width="510" height="746" alt="image" src="https://github.com/user-attachments/assets/fd8f908d-1a2e-4552-94f1-f6b01b8d42f9" />
              
 The project uses the LinkedIn Job Postings dataset obtained from Kaggle. Three related tables were used:
@@ -88,19 +101,10 @@ After cleaning, the processed postings data was joined with `job_skills.csv` and
 
 The merged dataset was then transformed into an instruction-following format. Each example contains the job title and job description as the model input and the corresponding `skill_name` as the target output. Finally, the dataset was divided into training, validation, and test sets for model development and evaluation.
 
----
-### Model Development
-
-The project fine-tunes Microsoft's Phi-3 Mini, a lightweight decoder-only transformer designed for instruction-following tasks.
-
-Instead of updating all model parameters, the project adopts QLoRA, which injects Low-Rank Adaptation (LoRA) layers into the pretrained model. This significantly reduces the number of trainable parameters while maintaining competitive performance.
-
-The model receives the job title and job description as input and generates the corresponding `skill_name` as the output.
-<img width="216" height="364" alt="image" src="https://github.com/user-attachments/assets/833465c1-71ac-445f-9ab0-85aaad070e94" />
-
-
  ---
-### Training & Fine-tuning
+
+ 
+### Training & Fine-tuning (Notebook 3)
 
 The model was fine-tuned using QLoRA with the Hugging Face Trainer API.
 Training was performed on a Kaggle GPU environment. The LoRA adapters were saved after training for inference and evaluation.
@@ -139,7 +143,7 @@ The trained adapter is saved and will be evaluated against the baseline model in
 
 
 ---
-### Evaluation
+### Evaluation (Notebook 4)
 We evaluated the fine-tuned Phi-3 Mini model by comparing it with the original baseline model using Accuracy, Precision, Recall, F1 score, a confusion matrix, and qualitative prediction examples.
 The results show that QLoRA fine-tuning significantly improved the model's task-specific classification capability. While the baseline model failed to predict the predefined skill categories, the fine-tuned model correctly identified several categories and achieved higher evaluation metrics.
 Although the model still occasionally generated verbose outputs and struggled with some minority classes, the evaluation demonstrates that parameter-efficient fine-tuning successfully adapted Phi-3 Mini to the job skill classification task.
