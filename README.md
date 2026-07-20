@@ -40,21 +40,7 @@ Large language models offer stronger contextual reasoning but often require sign
 Considering model capability, computational efficiency, and GPU limitations, Microsoft Phi-3 Mini was selected as the base model. Combined with QLoRA, the model can be fine-tuned efficiently while updating only a small subset of trainable parameters.
 
 ---
-### Preliminary Experiments
 
-
-Before training on the complete dataset, a development subset was used to validate the entire pipeline.
-
-The preliminary experiment confirmed that:
-
-- The LinkedIn job posting tables were successfully joined and cleaned.
-- Instruction-response training pairs were generated correctly.
-- The dataset was split into training, validation, and test sets.
-- The QLoRA fine-tuning pipeline completed successfully.
-- Training loss decreased over one epoch while validation loss remained stable.
-- A sample inference correctly predicted the expected `skill_name`.
-These experiments verified the feasibility of the proposed approach before larger-scale experiments.
----
 ## 3.Implementation
 
 ---
