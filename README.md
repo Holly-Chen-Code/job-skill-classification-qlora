@@ -1,5 +1,10 @@
 # QLoRA Fine-Tuning for Functional Job Skill Classification
 Group 20: Michael Dong, Haolin Chen
++1 8472572646, 
++1 2173050503 (Tel)
+dong.mic@northeastern.edu
+chen.holl@northeastern.edu
+Submission Date: July 19, 2026
 
 ---
 ## 1.Project overview
