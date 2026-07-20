@@ -201,12 +201,16 @@ RQ3: How does LoRA rank affect the trade-off between generation quality and comp
 
 This project used a fixed LoRA configuration (r=16, lora_alpha=32, lora_dropout=0.05). The planned comparison between different LoRA ranks was not completed because of limited GPU resources. Based on prior research and our experimental results, r=16 provides a reasonable balance between model performance and computational efficiency for this task.
 
+---
+
 ## 8 Future Work
 Complete the LoRA rank ablation (r=8, r=16, r=32) with access to higher-tier GPU compute
 Implement BERTScore and embedding-based evaluation to replace exact-match as the primary metric
 Apply class-weighted loss or oversampling to address underrepresented skill categories
 Explore constrained decoding to force the model to output valid skill labels directly, eliminating output verbosity as an evaluation bottleneck
 Fine-tune on the job posting generation task (RQ2) and evaluate with ROUGE-L on a held-out generation test set
+
+---
 
 ## 9. Contributors
 
@@ -225,6 +229,9 @@ Fine-tune on the job posting generation task (RQ2) and evaluate with ROUGE-L on 
 4. Gunasekar, S., et al. (2023). Textbooks Are All You Need. arXiv. 
 5. [Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers)
 6. [LinkedIn Job Postings Dataset (Kaggle)](...)
+
+---
+
 
 ## 11. Setup Instructions
 
